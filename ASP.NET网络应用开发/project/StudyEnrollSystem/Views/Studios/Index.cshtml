@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Login04.Models.Studio>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Studios</h2>
+<div id="menu">
+    <input id="streets-v11"
+           type="radio"
+           name="rtoggle"
+           value="streets"
+           checked="checked" />
+    <label for="streets-v11">streets</label>
+    <input id="light-v10" type="radio" name="rtoggle" value="light" />
+    <label for="light-v10">light</label>
+    <input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+    <label for="dark-v10">dark</label>
+    <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+    <label for="outdoors-v11">outdoors</label>
+    <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+    <label for="satellite-v9">satellite</label>
+</div>
+<div id="map" style="height:300px"></div>
+
+<style>
+    #menu {
+        margin-top:5px;
+        margin-bottom:5px;
+        background: #fff;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+</style>
+<br />
+
+<p>
+    @if (User.IsInRole("admin"))
+    {@Html.ActionLink("Create New", "Create")}
+</p>
+<table class="table">
+    
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudioName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinishTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudioDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course.CourseName)
+            </th>
+            <th></th>
+        </tr>
+   
+    
+        @foreach (var item in Model)
+        {
+            <tr class="coordinates">
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudioName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td class="latitude">
+                    @Html.DisplayFor(modelItem => item.Latitude)
+                </td>
+                <td class="longitude">
+                    @Html.DisplayFor(modelItem => item.Longitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FinishTime)
+                </td>
+                <td class="description">
+                    @Html.DisplayFor(modelItem => item.StudioDescription)
+                </td>
+                <td >
+                    
+                    @Html.DisplayFor(modelItem => item.Course.CourseName)
+                </td>
+                
+                <td>
+                    @if (User.IsInRole("admin"))
+                    {
+                        @Html.ActionLink("Edit |", "Edit", new { id = item.Id })
+                        @Html.ActionLink("Details |", "Details", new { id = item.Id })
+                        @Html.ActionLink("Delete ", "Delete", new { id = item.Id })
+                    }
+                    @if (User.IsInRole("user"))
+                    {
+                        @Html.ActionLink("Details", "Details", new { id = item.Id })
+                    }
+                </td>
+            </tr>
+        }
+    
+
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/mapbox")
+}
+

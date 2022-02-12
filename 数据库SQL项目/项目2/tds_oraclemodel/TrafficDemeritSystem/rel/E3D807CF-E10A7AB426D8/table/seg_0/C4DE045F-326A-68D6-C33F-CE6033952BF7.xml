@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4DE045F-326A-68D6-C33F-CE6033952BF7" name="COUNTRY">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>925984CD-6689-D7E4-CFD2-CD967D056B8B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="manu_country_iso" id="36F026A0-7A0C-45AD-E890-B92C6B558F97">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>ISO 3166 Alpha-3 Code</commentInRDBMS>
+<generatorID>553A5427-375F-AF16-EE46-3BC7DE3CC346</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manu_country_name" id="2EB27460-8854-4E6C-F67C-7B2F19512110">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>5EDC4539-2034-02B7-C962-3B2937E883CF</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7034269-56F7-2842-F8FF-26B0466D5E4F" name="COUNTRY_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>41459364-6CDB-ED18-F5F0-A04E61B38442</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36F026A0-7A0C-45AD-E890-B92C6B558F97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

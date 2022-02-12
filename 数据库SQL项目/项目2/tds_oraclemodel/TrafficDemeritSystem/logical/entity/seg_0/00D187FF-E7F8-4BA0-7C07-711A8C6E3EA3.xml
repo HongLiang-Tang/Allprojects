@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00D187FF-E7F8-4BA0-7C07-711A8C6E3EA3" name="DRIVER">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 09:10:22 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lic_num" id="B6B48A63-FA16-E754-7CD2-DBFA03D00528">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 09:11:53 UTC</createdTime>
+<commentInRDBMS> license number</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="f_name" id="F7EBC83E-30C3-8BBD-1F23-CEF06FC82000">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 09:15:20 UTC</createdTime>
+<commentInRDBMS>driver first name</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="l_name" id="6B10906A-D72C-99D2-04D3-B1716B1E6B22">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 10:49:42 UTC</createdTime>
+<commentInRDBMS>driver last name</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_street" id="0A56930D-A4B0-1826-70CB-8980DF344EF7">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 10:51:50 UTC</createdTime>
+<commentInRDBMS>driver residential street address</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_town" id="17DF9A5A-0CE7-E47D-DE95-48D08CA93E83">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 10:52:53 UTC</createdTime>
+<commentInRDBMS>driver residential town address</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_postcode" id="BCECB9B5-F071-0DA5-9F38-56EA5A1B5848">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 10:53:28 UTC</createdTime>
+<commentInRDBMS>driver residential postcode address</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="d_of_birth" id="DF35715F-BF87-501C-450E-93F253BA0BF7">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 10:56:24 UTC</createdTime>
+<commentInRDBMS>driver date of birth</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lic_exp_date" id="75C6F33F-64C5-6C37-68BC-BD6C3797D804">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 10:56:48 UTC</createdTime>
+<commentInRDBMS>the expiry date for a driver&apos;s licence</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="accu_demerit_p" id="93350F41-3A5C-D926-FCAC-ED5D0F6932E5">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 11:02:19 UTC</createdTime>
+<commentInRDBMS>the total number of demerit points the driver has accumulated.</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lic_status" id="544EE2EB-1A79-FE71-EB17-CD72E002C908">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 11:04:50 UTC</createdTime>
+<commentInRDBMS>licence status</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0FA808C-F6BB-4183-BD33-7FDAB30D94DA" name="DRIVER PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 09:14:10 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B6B48A63-FA16-E754-7CD2-DBFA03D00528</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

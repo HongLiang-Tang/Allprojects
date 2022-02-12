@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B85F9B6-2DCA-7BD1-ACBA-68677C44298C" name="MANUFACTURER">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 11:25:01 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="manu_code" id="D129B61E-35EC-51D5-E065-E81333B5F14B">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 11:40:10 UTC</createdTime>
+<commentInRDBMS>manufacturer code</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manu_name" id="3DE1A4BA-2696-4EE6-9B15-9CF976441CE2">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 11:42:17 UTC</createdTime>
+<commentInRDBMS>manufacturer code</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manu_country_iso" id="83019861-7618-8CD8-31DD-2BE68AAC90DF">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:51:57 UTC</createdTime>
+<commentInRDBMS>ISO 3166 Alpha-3 Code</commentInRDBMS>
+<generatorID>8A5264F2-9CF3-D325-4162-45F7B0E1719A</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>553A5427-375F-AF16-EE46-3BC7DE3CC346</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA3A9528-A091-C2A2-C482-149BBD39845B" name="MANUFACTURER PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 11:41:04 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D129B61E-35EC-51D5-E065-E81333B5F14B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

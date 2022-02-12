@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9042D8D8-9824-BEA4-CF2E-6C45227A1EFC" name="ASSIGNMENT">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:20 UTC</createdTime>
+<generatorID>97FDFF85-CC66-F3AC-696B-A635986D0623</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="officer_id" id="5A976645-5F89-19F9-FBB9-C66FFFE0C38C">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Police officers are identified by an officer id</commentInRDBMS>
+<generatorID>E881C09E-343C-221C-8AA4-B2B2DA6CC887</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E8F67DE-B13A-89C4-1E02-BACA56230BD1" referredColumn="5290F7FB-F988-0DEA-3C92-00458255454C"/>
+</associations>
+</Column>
+<Column name="from_date" id="6D13C941-AD26-BCEE-8887-7C284E40B736">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>the start date when the officer is assigned to a station</commentInRDBMS>
+<generatorID>A6FAB20F-9DB6-1743-76BA-310B8D69EB92</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="station_number" id="0E1191C2-5636-E08D-54A4-89EB16C33E40">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Police stations are identified by a station number</commentInRDBMS>
+<generatorID>E77A9B43-E5D7-04E2-1FBC-B1C99B658AB2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6642F72-03B4-B1DE-8F25-46754CD20444" referredColumn="D51CF4C6-1192-4BC1-82C1-17E3CE95A5D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE0BDA57-0052-204A-3CCB-BF46EC3EA4A0" name="ASSIGNMENT_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>12BDA1A7-5D22-510D-5A8F-7A3B39867142</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A976645-5F89-19F9-FBB9-C66FFFE0C38C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDA1739A-8877-99FF-7799-29A00C10541A" name="assi_station">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>3E0B8EA1-4E3C-44C3-B633-5520FE94DF71</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E1191C2-5636-E08D-54A4-89EB16C33E40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FC32839-2F1D-D090-0A63-3DB7F0E2F855" name="offi_assignment">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>058FD858-215E-E721-6D4D-58F7E6CE5363</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A976645-5F89-19F9-FBB9-C66FFFE0C38C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

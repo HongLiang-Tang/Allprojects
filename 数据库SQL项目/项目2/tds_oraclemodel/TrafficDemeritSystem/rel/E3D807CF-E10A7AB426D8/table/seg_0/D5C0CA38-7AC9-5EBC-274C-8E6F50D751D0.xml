@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5C0CA38-7AC9-5EBC-274C-8E6F50D751D0" name="TYPE_VARIATION">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>6ADC0166-EE7F-725E-1C08-CDE5D1C626E2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type_num" id="8465CD35-AC85-F8C8-DE25-C13F8275D382">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<comment>added surrogate key to uniquely identifies license type.improve design</comment>
+<generatorID>85861D4F-3E40-1E5A-AA95-F77A562D859D</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lic_type" id="06D9B0FB-66C8-94DF-DD66-A97525DF2897">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<comment>license type </comment>
+<generatorID>446AD3F0-D519-CEC8-0BF6-116B90829BC9</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<constraintName>chk_lic_type</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Multi Combination &apos;" description="type of license held"/>
+<valueDef value="&apos;Tractor &apos;" description="type of license held"/>
+<valueDef value="Car" description="type of license held"/>
+<valueDef value="Heavy Combination" description="type of license held"/>
+<valueDef value="Heavy Rigid" description="type of license held"/>
+<valueDef value="Light Rigid" description="type of license held"/>
+<valueDef value="Marine" description="type of license held"/>
+<valueDef value="Medium Rigid" description="type of license held"/>
+<valueDef value="Motorcycle" description="type of license held"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FFA65B7-2C00-F22F-D71B-F64700A70263" name="TYPE_VARIATION_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>45A899F9-8536-1378-620D-AE894F5117DD</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8465CD35-AC85-F8C8-DE25-C13F8275D382"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F825673-C84E-9786-43F7-5B18E83485CE" name="TYPE_VARIATION_NK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>60A345C5-9298-9377-9438-633345B86F3A</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06D9B0FB-66C8-94DF-DD66-A97525DF2897"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

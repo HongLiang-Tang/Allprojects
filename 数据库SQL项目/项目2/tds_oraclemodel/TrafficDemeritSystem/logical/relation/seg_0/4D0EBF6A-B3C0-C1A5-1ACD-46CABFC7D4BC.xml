@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="offi_offence" directorySegmentName="seg_0" id="4D0EBF6A-B3C0-C1A5-1ACD-46CABFC7D4BC">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 18:20:32 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<sourcePk>E747E2DE-23C2-3217-FAE2-6320A586D01D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>identifies</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B8E3BF2A-407B-5961-2040-49B2399B9633</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>79ADFBB2-A9AF-BF42-1866-BF490A8E3423</targetEntity>
+<transferable>true</transferable>
+</Relation>

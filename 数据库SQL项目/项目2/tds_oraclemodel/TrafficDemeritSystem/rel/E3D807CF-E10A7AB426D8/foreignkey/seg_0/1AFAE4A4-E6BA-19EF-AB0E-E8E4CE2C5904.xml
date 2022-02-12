@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1AFAE4A4-E6BA-19EF-AB0E-E8E4CE2C5904" containerWithKeyObject="747C087A-C926-2B46-FEB1-E86050A8D7E3" localFKIndex="38CA609D-DBE6-A9AE-051E-BF167D2053B3" name="driver_cancellation">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>38EC0250-47BA-E8EF-B81C-6B5F7135D7A4</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<referredTableLongName>DRIVER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD0B6C76-0CC8-9C61-43A5-12946910F72C</referredTableID>
+<keyObject>46921EAD-F4F5-AA68-9FF8-0D3E1EE7F141</keyObject>
+<referredKeyID>46921EAD-F4F5-AA68-9FF8-0D3E1EE7F141</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>lic_num</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

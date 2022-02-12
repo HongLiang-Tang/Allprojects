@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79ADFBB2-A9AF-BF42-1866-BF490A8E3423" name="OFFENCE">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:06:47 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="offence_num" id="BE0B1F7E-8FD3-AF2E-76FE-B8718A1512AA">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:07:45 UTC</createdTime>
+<commentInRDBMS>Offence number</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="o_location" id="D3C40B81-E933-AE86-F7E1-46AF99DFF46C">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:08:45 UTC</createdTime>
+<commentInRDBMS>the location where offence committed</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="o_date" id="F3D96781-81FF-94D0-CA4A-7C7B5A4F605C">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:09:49 UTC</createdTime>
+<commentInRDBMS>Offence happened date</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="o_time" id="A346B493-3A14-2B21-F179-CBF29BA760F6">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:10:17 UTC</createdTime>
+<commentInRDBMS>the time for this offence</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="officer_id" id="7156E5D0-CC39-B9CA-8366-B3A76FBF5C9F">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 18:20:32 UTC</createdTime>
+<commentInRDBMS>Police officers are identified by an officer id</commentInRDBMS>
+<generatorID>4D0EBF6A-B3C0-C1A5-1ACD-46CABFC7D4BC</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>5B013F21-7FAF-3D07-9090-06B75EADB0AC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="demerit_code" id="BB98E1C6-B780-968D-D184-26049CC26FA5">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 18:22:08 UTC</createdTime>
+<commentInRDBMS>Demerit code</commentInRDBMS>
+<generatorID>86CFAC16-CBE5-11C2-FA2E-2A16AE4D5829</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>4BC4447C-01B2-23F1-09B5-F705515EEEA4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lic_num" id="84AA84F5-E987-6786-D945-1DF9C9A33389">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 18:26:37 UTC</createdTime>
+<commentInRDBMS> license number</commentInRDBMS>
+<generatorID>59D8E75C-91E5-157D-EFFA-8DD016B40DAE</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>B6B48A63-FA16-E754-7CD2-DBFA03D00528</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="v_in" id="0E077F9E-4C90-8771-B164-35F3A66F7534">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:28:47 UTC</createdTime>
+<commentInRDBMS>Vehicle Identification Number</commentInRDBMS>
+<generatorID>387F45FF-280F-9AFA-FFAA-6B7EBC09531B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>5FF7A977-8657-CCD7-B728-12E2B45E09FC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6A8E26B-22FD-F258-C884-4CF6D010871B" name="OFFENCE PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:08:38 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE0B1F7E-8FD3-AF2E-76FE-B8718A1512AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

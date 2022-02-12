@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vehicle_registration" directorySegmentName="seg_0" id="B0D7B702-6E3B-E433-49D0-72D49F7705E2">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:06:24 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<sourcePk>A444834B-494D-8EF1-5FD4-742256AD4C05</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>registers</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C3B37C09-728A-EF8F-CF95-B4A441D3D9E2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3BBF39BA-CEBF-D87B-B214-914013B127BA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

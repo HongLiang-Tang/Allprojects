@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6E7FFC8-3CD1-3134-641B-553C76A4B10C" containerWithKeyObject="3EADD544-0DCB-CC76-99C3-ACB40866BEF3" localFKIndex="3552A067-8C34-A2EB-9F9B-3603BA67D2D4" name="country_manu">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>8A5264F2-9CF3-D325-4162-45F7B0E1719A</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<referredTableLongName>COUNTRY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C4DE045F-326A-68D6-C33F-CE6033952BF7</referredTableID>
+<keyObject>A7034269-56F7-2842-F8FF-26B0466D5E4F</keyObject>
+<referredKeyID>A7034269-56F7-2842-F8FF-26B0466D5E4F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>manu_country_iso</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

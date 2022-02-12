@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D804FAFF-FEBA-B3B3-3927-15A4FC45BBF2" mainViewID="A5D9542C-40EF-7E05-ED26-108A2816F5D4">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 08:47:37 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

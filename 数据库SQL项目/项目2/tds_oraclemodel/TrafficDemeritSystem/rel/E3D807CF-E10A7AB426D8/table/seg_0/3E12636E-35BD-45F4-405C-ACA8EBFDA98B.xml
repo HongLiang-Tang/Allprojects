@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E12636E-35BD-45F4-405C-ACA8EBFDA98B" name="TYPES">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>11F669DC-6A62-99BD-3C62-59B3DFFB174D</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type_code" id="B41AEB9D-838A-2283-FB7C-7BE786AC252B">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>surrogate key to uniquely identify engine type. improve design.</commentInRDBMS>
+<generatorID>6B581C96-F291-C127-D904-E4086F3171EC</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="e_type" id="54C0F405-697F-41BD-13F2-4A3F1ECF296D">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>engine type</commentInRDBMS>
+<generatorID>EFB83C93-776F-CED6-CD68-452072D147A8</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="859593D3-E3C4-603D-0448-B9CBF10AB6CE" name="TYPE_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>4F766E05-E92E-3429-8516-3E7C499B6ED2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B41AEB9D-838A-2283-FB7C-7BE786AC252B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E4A5399-49CC-7296-18B4-96276D4D5337" name="TYPE_NK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>1D615BE3-6550-A4F5-283A-59A49E0110C9</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54C0F405-697F-41BD-13F2-4A3F1ECF296D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1C4AE60-2202-8E2B-146B-479B06C4C359" name="OFFENCE">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>79ADFBB2-A9AF-BF42-1866-BF490A8E3423</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="offence_num" id="9A8FBDF7-A577-4FB3-3645-7D392F644F15">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Offence number</commentInRDBMS>
+<generatorID>BE0B1F7E-8FD3-AF2E-76FE-B8718A1512AA</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="o_location" id="58CC49FE-3130-A84A-B224-D4F1605AE273">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>the location where offence committed</commentInRDBMS>
+<generatorID>D3C40B81-E933-AE86-F7E1-46AF99DFF46C</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="o_date" id="270AD21F-FAC8-BB1C-1EA0-FBFF9028B15F">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Offence happened date</commentInRDBMS>
+<generatorID>F3D96781-81FF-94D0-CA4A-7C7B5A4F605C</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="o_time" id="46FEE9A0-B9A2-1A14-EE4F-E18B2E4DF1C2">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>the time for this offence</commentInRDBMS>
+<generatorID>A346B493-3A14-2B21-F179-CBF29BA760F6</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="officer_id" id="DD2E5432-2C0A-4669-4E39-295C90B4B4C7">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Police officers are identified by an officer id</commentInRDBMS>
+<generatorID>7156E5D0-CC39-B9CA-8366-B3A76FBF5C9F</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C240B1C4-3862-955B-8103-75F96CB20C91" referredColumn="5290F7FB-F988-0DEA-3C92-00458255454C"/>
+</associations>
+</Column>
+<Column name="demerit_code" id="C99706BB-652B-137C-8F7D-C877DEC58C14">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Demerit code</commentInRDBMS>
+<generatorID>BB98E1C6-B780-968D-D184-26049CC26FA5</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B46C761-2C3B-C773-BE72-B203C5D38753" referredColumn="167CE0A6-89E5-FBD0-5845-3D1A288CDC65"/>
+</associations>
+</Column>
+<Column name="lic_num" id="C87D2B9E-41EE-3EC4-7D7C-B50988C4D6FF">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS> license number</commentInRDBMS>
+<generatorID>84AA84F5-E987-6786-D945-1DF9C9A33389</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77313990-C84E-7DBF-742B-BD4F824AE965" referredColumn="92FC4F77-5D9C-FBBB-F461-704470A8CD65"/>
+</associations>
+</Column>
+<Column name="v_in" id="78281FE7-010E-5227-9AD1-86233C5F3627">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Vehicle Identification Number</commentInRDBMS>
+<generatorID>0E077F9E-4C90-8771-B164-35F3A66F7534</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F25E2B46-C12D-7004-1425-5E359C6727A1" referredColumn="7B946E29-FDFA-185D-6569-07FE8C396FA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3DCBD00-4213-82F1-DC9A-1BC7EAAA7CE7" name="OFFENCE_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>E6A8E26B-22FD-F258-C884-4CF6D010871B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A8FBDF7-A577-4FB3-3645-7D392F644F15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA304BE7-CD72-F60B-BAF4-A171B5E9235A" name="demerit_offence">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>86CFAC16-CBE5-11C2-FA2E-2A16AE4D5829</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C99706BB-652B-137C-8F7D-C877DEC58C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="584879F6-3A88-45AD-EA9D-B9BA207CA816" name="driver_offence">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>59D8E75C-91E5-157D-EFFA-8DD016B40DAE</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C87D2B9E-41EE-3EC4-7D7C-B50988C4D6FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B2E4BFD-7DC2-9639-1AEA-26041901758C" name="offi_offence">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>4D0EBF6A-B3C0-C1A5-1ACD-46CABFC7D4BC</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD2E5432-2C0A-4669-4E39-295C90B4B4C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0BB7743-AD07-591D-C2A2-B79D0F01B863" name="vehicle_offence">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>387F45FF-280F-9AFA-FFAA-6B7EBC09531B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78281FE7-010E-5227-9AD1-86233C5F3627"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

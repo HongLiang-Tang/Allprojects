@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B8E3BF2A-407B-5961-2040-49B2399B9633" name="POLICE_OFFICER">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:16:44 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="officer_id" id="5B013F21-7FAF-3D07-9090-06B75EADB0AC">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:19:42 UTC</createdTime>
+<commentInRDBMS>Police officers are identified by an officer id</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pfirst_name" id="724441CB-473F-DD6A-7F36-E60D953710D8">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:22:17 UTC</createdTime>
+<commentInRDBMS>police officer first name</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plast_name" id="34128EB5-629F-6292-BFFA-50A04D7856D9">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:23:24 UTC</createdTime>
+<commentInRDBMS>police officer last name</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="poli_rank" id="BAABB08D-CA8B-16D3-D552-CD07BDF014C4">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:24:09 UTC</createdTime>
+<commentInRDBMS>policer officer&apos;s rank</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E747E2DE-23C2-3217-FAE2-6320A586D01D" name="POLICE_OFFICER PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 14:21:21 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5B013F21-7FAF-3D07-9090-06B75EADB0AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

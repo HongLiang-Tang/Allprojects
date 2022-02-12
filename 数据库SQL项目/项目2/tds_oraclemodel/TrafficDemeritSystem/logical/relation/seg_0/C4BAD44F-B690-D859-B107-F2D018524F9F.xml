@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="model_vehi" directorySegmentName="seg_0" id="C4BAD44F-B690-D859-B107-F2D018524F9F">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:21:24 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<sourcePk>5E100D1D-91FF-52AF-2BA2-8B15D468D25D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>relates</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F89D340E-7A8A-CA43-A6EC-B933CE90A414</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C3B37C09-728A-EF8F-CF95-B4A441D3D9E2</targetEntity>
+<transferable>true</transferable>
+</Relation>

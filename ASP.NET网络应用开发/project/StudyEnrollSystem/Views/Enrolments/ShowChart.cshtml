@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Login04.Models.Chart>
+@{
+    ViewBag.Title = "ShowChart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShowChart</h2>
+
+@*@foreach (var item in Model)
+    {
+        <div class="coordinates">
+            <div class="nameList">
+                @Html.DisplayFor(modelitem => item.Name)
+            </div>
+            <div class="count">
+                @Html.DisplayFor(modelitem => item.Count)
+            </div>
+
+        </div>
+    }*@
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Count)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="coordinates">
+            <td class="nameList">
+                @Html.DisplayFor(mdoelItem => item.Name)
+            </td>
+            <td class="count">
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+
+
+        </tr>
+    }
+
+
+</table>
+<script type="text/javascript" src="Chart.js"></script>
+
+<script type="text/javascript" src="chartjs-plugin-colorschemes.js"></script>
+<canvas id="myChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+<script>
+    $(document).ready(function () {
+        var lableList = [];
+        var dataList = [];
+        $(".coordinates").each(function () {
+            var name = $(".nameList", this).text().trim();
+            var a = $(".count", this).text().trim();
+            var count = parseInt(a);
+            lableList.push(name);
+            dataList.push(count);
+
+
+        });
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+
+                labels: lableList,
+                datasets: [{
+                    data: dataList,
+
+
+                }]
+
+            },
+            options: {
+                plugins: {
+
+                    colorschemes: {
+
+                        scheme: 'brewer.Paired12'
+
+                    }
+
+                }
+
+
+            }
+
+
+
+        });
+
+
+
+    });
+
+</script>

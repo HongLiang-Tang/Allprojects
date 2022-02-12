@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD4619F2-ED1D-7E07-4FB3-0B21BD23114A" name="REGISTRATION">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>3BBF39BA-CEBF-D87B-B214-914013B127BA</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="v_in" id="D2005462-E4DC-A8F3-18E2-572184D58EFD">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Vehicle Identification Number</commentInRDBMS>
+<generatorID>76B262FD-8B09-D5EE-444F-86412D668039</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="369C75CA-A73A-6347-A40A-89610729A61A" referredColumn="7B946E29-FDFA-185D-6569-07FE8C396FA8"/>
+</associations>
+</Column>
+<Column name="regis_date" id="A54F84D1-9A5B-892C-C62F-49ED15872447">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Date registered</commentInRDBMS>
+<generatorID>26503847-F76B-F264-7BDA-87250137525C</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regis_num" id="6D84C406-A43E-54BB-615E-7DB99D92D7F3">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Registration Number</commentInRDBMS>
+<generatorID>D7D8D618-2AF8-7061-F18C-8423E02F1D2B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deregis_date" id="24C56604-F36C-B5E8-95D3-3642D546DEDE">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Date DeRegistered</commentInRDBMS>
+<generatorID>54D9FAFC-B41A-92DE-402B-D61621DC3D4A</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED449E7A-32E3-A7AE-1C33-6DBD9B5062E2" name="REGISTRATION_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>4B66E809-9D7E-7F08-0FA9-19C1D7BFAFFC</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A54F84D1-9A5B-892C-C62F-49ED15872447"/>
+<colUsage columnID="D2005462-E4DC-A8F3-18E2-572184D58EFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C170E34F-A06D-9FFF-491D-8C2FE7FF75CD" name="vehicle_registration">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>B0D7B702-6E3B-E433-49D0-72D49F7705E2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2005462-E4DC-A8F3-18E2-572184D58EFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

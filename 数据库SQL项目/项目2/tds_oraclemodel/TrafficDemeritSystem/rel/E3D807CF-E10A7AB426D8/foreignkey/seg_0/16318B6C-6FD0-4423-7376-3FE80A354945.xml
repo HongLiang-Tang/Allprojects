@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="16318B6C-6FD0-4423-7376-3FE80A354945" containerWithKeyObject="437EB90A-9E82-FB6C-0EC2-9BD9C4FBD203" localFKIndex="12CF29D4-523C-43D9-9FA8-D72B6B43EF38" name="type_var_vehi">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>70537AFE-6847-038C-283A-E9F397406D14</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<referredTableLongName>TYPE_VARIATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D5C0CA38-7AC9-5EBC-274C-8E6F50D751D0</referredTableID>
+<keyObject>0FFA65B7-2C00-F22F-D71B-F64700A70263</keyObject>
+<referredKeyID>0FFA65B7-2C00-F22F-D71B-F64700A70263</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>type_num</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="offi_station" directorySegmentName="seg_0" id="26068D5A-5FD8-3C47-5F05-DA847CE06D8E">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 18:10:31 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<sourcePk>E747E2DE-23C2-3217-FAE2-6320A586D01D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>manage</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B8E3BF2A-407B-5961-2040-49B2399B9633</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>24A7878D-42C1-3F3F-A4C6-D571FDA969D0</targetEntity>
+<transferable>true</transferable>
+</Relation>

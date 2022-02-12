@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6ADC0166-EE7F-725E-1C08-CDE5D1C626E2" name="TYPE_VARIATION">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:45:22 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type_num" id="85861D4F-3E40-1E5A-AA95-F77A562D859D">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:45:34 UTC</createdTime>
+<comment>added surrogate key to uniquely identifies license type.improve design</comment>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lic_type" id="446AD3F0-D519-CEC8-0BF6-116B90829BC9">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:46:46 UTC</createdTime>
+<comment>license type </comment>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<constraintName>chk_lic_type</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Multi Combination &apos;" description="type of license held"/>
+<valueDef value="&apos;Tractor &apos;" description="type of license held"/>
+<valueDef value="Car" description="type of license held"/>
+<valueDef value="Heavy Combination" description="type of license held"/>
+<valueDef value="Heavy Rigid" description="type of license held"/>
+<valueDef value="Light Rigid" description="type of license held"/>
+<valueDef value="Marine" description="type of license held"/>
+<valueDef value="Medium Rigid" description="type of license held"/>
+<valueDef value="Motorcycle" description="type of license held"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="45A899F9-8536-1378-620D-AE894F5117DD" name="TYPE_VARIATION PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:46:40 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85861D4F-3E40-1E5A-AA95-F77A562D859D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="60A345C5-9298-9377-9438-633345B86F3A" name="TYPE_VARIATION_NK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 23:13:03 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<newElementsIDs>446AD3F0-D519-CEC8-0BF6-116B90829BC9</newElementsIDs>
+<usedAttributes>
+<attributeRef>446AD3F0-D519-CEC8-0BF6-116B90829BC9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

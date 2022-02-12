@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DD664FD-F073-B836-1DAE-32B665F0FFC9" name="SUSPENSION">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>1DA598CA-F932-4598-C823-04180CDD036F</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lic_num" id="2F0DCEB9-3A8D-F1BA-C9D6-68C7F97CB98F">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS> license number</commentInRDBMS>
+<generatorID>DD2363E5-360A-FE80-60C3-A9B4033253D3</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="082BCAFD-56AC-07A8-3700-F7710F0659B5" referredColumn="92FC4F77-5D9C-FBBB-F461-704470A8CD65"/>
+</associations>
+</Column>
+<Column name="date_sus" id="EE342E51-FEEF-A860-AA5F-1D7DB9B14415">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Date Suspended</commentInRDBMS>
+<generatorID>D061AF13-A2B7-719B-6ADA-7A42539718AA</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="3A222F70-0D43-BEA5-A3E7-AF675392BCC0">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Suspension End Date</commentInRDBMS>
+<generatorID>074DAB1B-B724-4509-1C1E-72B5B781F9B5</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDD720F2-1B2D-86F2-DE40-722EAB7B8B9E" name="SUSPENSION_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>430D878D-90B8-2B28-C2CF-B7CB6BE5785C</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE342E51-FEEF-A860-AA5F-1D7DB9B14415"/>
+<colUsage columnID="2F0DCEB9-3A8D-F1BA-C9D6-68C7F97CB98F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8775C402-D0DC-9BC8-8C67-75C901406276" name="driver_suspension">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>88E1AB88-B30B-BC3F-3578-62E9217651CD</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F0DCEB9-3A8D-F1BA-C9D6-68C7F97CB98F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

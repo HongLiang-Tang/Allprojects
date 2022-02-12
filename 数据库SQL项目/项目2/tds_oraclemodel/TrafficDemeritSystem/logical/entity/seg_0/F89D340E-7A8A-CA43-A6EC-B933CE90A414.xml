@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F89D340E-7A8A-CA43-A6EC-B933CE90A414" name="VEHICLE_MODEL">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:01:41 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="model_name" id="BEF54A7E-274D-01E5-A194-EF73163777A2">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:03:00 UTC</createdTime>
+<commentInRDBMS>Model name</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model_transmission" id="DA6B03BC-C559-FF08-419D-0AEBC26CC0D6">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:04:04 UTC</createdTime>
+<commentInRDBMS>transmission type in this vehicle</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<constraintName>chk_model_transmission</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="Automatic Transmission" description="Transmission technic"/>
+<valueDef value="Manual Transmission" description="Transmission technic"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="engine_size" id="E86BD08C-CAFB-E235-603D-6D7C23E75612">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:06:38 UTC</createdTime>
+<commentInRDBMS>Engine size</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="laden_height" id="E630326C-4D75-F8F0-18FB-AAFEBC88A3F2">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:07:42 UTC</createdTime>
+<commentInRDBMS>Ground clearance laden height</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unladen_height" id="1688A135-0025-045B-8D09-5FC5A37B2499">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:08:36 UTC</createdTime>
+<commentInRDBMS>Ground clearance unladen height</commentInRDBMS>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manu_code" id="F5F7B2F7-6E69-3DCE-3976-2F0DC58948D3">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:03:13 UTC</createdTime>
+<commentInRDBMS>manufacturer code</commentInRDBMS>
+<generatorID>CB864EAF-13D2-496B-94FE-C7022765ED08</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>D129B61E-35EC-51D5-E065-E81333B5F14B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5E100D1D-91FF-52AF-2BA2-8B15D468D25D" name="VEHICLE_MODEL PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:03:57 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BEF54A7E-274D-01E5-A194-EF73163777A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

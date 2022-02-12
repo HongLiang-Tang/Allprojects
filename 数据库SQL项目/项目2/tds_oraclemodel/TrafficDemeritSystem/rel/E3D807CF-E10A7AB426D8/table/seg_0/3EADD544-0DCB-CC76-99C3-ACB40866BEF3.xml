@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EADD544-0DCB-CC76-99C3-ACB40866BEF3" name="MANUFACTURER">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>5B85F9B6-2DCA-7BD1-ACBA-68677C44298C</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="manu_code" id="1F285200-F78E-4F79-478E-3DDB80D3D5A7">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>manufacturer code</commentInRDBMS>
+<generatorID>D129B61E-35EC-51D5-E065-E81333B5F14B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manu_name" id="990CE054-3ACC-FA7F-2F95-393D54DE0545">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>manufacturer code</commentInRDBMS>
+<generatorID>3DE1A4BA-2696-4EE6-9B15-9CF976441CE2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manu_country_iso" id="B5E2DA4E-851A-8517-379D-78D4E250C524">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>ISO 3166 Alpha-3 Code</commentInRDBMS>
+<generatorID>83019861-7618-8CD8-31DD-2BE68AAC90DF</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6E7FFC8-3CD1-3134-641B-553C76A4B10C" referredColumn="36F026A0-7A0C-45AD-E890-B92C6B558F97"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="198F2003-D644-CE32-969F-9E28085A2A5B" name="MANUFACTURER_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>FA3A9528-A091-C2A2-C482-149BBD39845B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F285200-F78E-4F79-478E-3DDB80D3D5A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3552A067-8C34-A2EB-9F9B-3603BA67D2D4" name="country_manu">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>8A5264F2-9CF3-D325-4162-45F7B0E1719A</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5E2DA4E-851A-8517-379D-78D4E250C524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="demerit_offence" directorySegmentName="seg_0" id="86CFAC16-CBE5-11C2-FA2E-2A16AE4D5829">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 18:22:08 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<sourcePk>0BB72C2E-A47E-3428-7C98-52C9B932BD2F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>relate</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9AD07641-C10B-0154-0A6C-91AE4A2F03A2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>79ADFBB2-A9AF-BF42-1866-BF490A8E3423</targetEntity>
+<transferable>true</transferable>
+</Relation>

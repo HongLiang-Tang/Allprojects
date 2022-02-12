@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C8D120D-A797-A8A6-7302-EC13BAA7493D" name="VEHICLE_MODEL">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>F89D340E-7A8A-CA43-A6EC-B933CE90A414</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="model_name" id="47BAB15C-C210-6DE1-26EC-08F5D12DAB02">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Model name</commentInRDBMS>
+<generatorID>BEF54A7E-274D-01E5-A194-EF73163777A2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_transmission" id="43BBD65B-F639-8298-7186-7F69FB89D08D">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>transmission type in this vehicle</commentInRDBMS>
+<generatorID>DA6B03BC-C559-FF08-419D-0AEBC26CC0D6</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<constraintName>chk_model_transmission</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="Automatic Transmission" description="Transmission technic"/>
+<valueDef value="Manual Transmission" description="Transmission technic"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="engine_size" id="783C68A0-6B77-BB47-C586-5A34E1903437">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Engine size</commentInRDBMS>
+<generatorID>E86BD08C-CAFB-E235-603D-6D7C23E75612</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="laden_height" id="F56D7FB0-D0BA-9E3B-F8FF-510417E80701">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Ground clearance laden height</commentInRDBMS>
+<generatorID>E630326C-4D75-F8F0-18FB-AAFEBC88A3F2</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unladen_height" id="1FCCB2AA-0D56-77D9-EF46-B3F20CB33F5F">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Ground clearance unladen height</commentInRDBMS>
+<generatorID>1688A135-0025-045B-8D09-5FC5A37B2499</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manu_code" id="09659435-B79D-5439-2EAE-90703C8947B5">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>manufacturer code</commentInRDBMS>
+<generatorID>F5F7B2F7-6E69-3DCE-3976-2F0DC58948D3</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21E6CBCD-C86D-CA87-2CD1-F58968FE6529" referredColumn="1F285200-F78E-4F79-478E-3DDB80D3D5A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E79DE953-EB49-276F-C299-D2E304E73910" name="VEHICLE_MODEL_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>5E100D1D-91FF-52AF-2BA2-8B15D468D25D</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47BAB15C-C210-6DE1-26EC-08F5D12DAB02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03C7BADD-514A-97A2-FC18-AA35AE338880" name="manu_model">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>CB864EAF-13D2-496B-94FE-C7022765ED08</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09659435-B79D-5439-2EAE-90703C8947B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Chart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chart</h2>
+
+@using (Html.BeginForm("ShowChart", "Enrolments", FormMethod.Post)) 
+{
+    <div>
+        <input class="pickDate" name="startDate"> to
+        <input class="pickDate" name="endDate" >
+        <button type="submit" class="btn-sm btn-primary">Show Chart</button>
+    </div>
+}
+
+<script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+<link href="~/Content/bootstrap-datepicker.css" rel="stylesheet" />
+<script>
+    $(function () {
+        $('.pickDate').datepicker();
+
+
+    });
+</script>

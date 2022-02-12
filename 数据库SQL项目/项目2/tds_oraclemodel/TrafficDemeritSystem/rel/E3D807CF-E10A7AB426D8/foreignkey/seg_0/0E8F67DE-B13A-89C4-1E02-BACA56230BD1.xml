@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0E8F67DE-B13A-89C4-1E02-BACA56230BD1" containerWithKeyObject="9042D8D8-9824-BEA4-CF2E-6C45227A1EFC" localFKIndex="1FC32839-2F1D-D090-0A63-3DB7F0E2F855" name="offi_assignment">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>058FD858-215E-E721-6D4D-58F7E6CE5363</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<referredTableLongName>POLICE_OFFICER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3392FD3D-6935-F3C9-1F2E-0E282C316F04</referredTableID>
+<keyObject>5B20DDC3-E54A-60F2-72DD-BF9A963FCB56</keyObject>
+<referredKeyID>5B20DDC3-E54A-60F2-72DD-BF9A963FCB56</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>officer_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

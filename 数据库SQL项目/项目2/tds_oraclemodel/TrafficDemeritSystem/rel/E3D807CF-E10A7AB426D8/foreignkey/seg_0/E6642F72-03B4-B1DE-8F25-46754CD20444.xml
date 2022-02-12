@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E6642F72-03B4-B1DE-8F25-46754CD20444" containerWithKeyObject="9042D8D8-9824-BEA4-CF2E-6C45227A1EFC" localFKIndex="BDA1739A-8877-99FF-7799-29A00C10541A" name="assi_station">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>3E0B8EA1-4E3C-44C3-B633-5520FE94DF71</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<referredTableLongName>POLICE_STATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AAA23794-02ED-9E54-4CD7-D3D7B221A179</referredTableID>
+<keyObject>668B192F-F90C-A49B-3575-8787EA50E6D2</keyObject>
+<referredKeyID>668B192F-F90C-A49B-3575-8787EA50E6D2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>station_number</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

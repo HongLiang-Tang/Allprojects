@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Tile
+comment0.text=\r\n\ The\ tile\ class\ will\ store\ each\ individual\ tile\ which\ can\ be\ used\ by\ the\ player\ to\ play\ the\ game\r\n\r\n\ @author\ Hongliang\ Tang\r\n\ @version\ 1.0\ (31.August.2019)\r\n
+comment1.params=score\ value
+comment1.target=Tile(int,\ int)
+comment1.text=\r\n\ non-default\ constructor\ for\ Tile\r\n\r\n\ @param\ score\ the\ score\ gained\ by\ the\ player\ from\ playing\ that\ tile\ during\ a\ round\r\n\ @param\ value\ the\ face\ value\ of\ the\ tile\ which\ is\ used\ to\ calculate\ the\ round\ total\ while\ playing\ the\ game\r\n
+comment2.params=
+comment2.target=Tile()
+comment2.text=\r\n\ default\ constructor\ for\ Tile\r\n
+comment3.params=
+comment3.target=int\ getScore()
+comment3.text=\r\n\ Accessor\ Method\ to\ get\ the\ score\ of\ the\ tile\r\n\r\n\ @return\ the\ score\ gained\ by\ the\ player\ from\ playing\ that\ tile\ during\ a\ round.\r\n
+comment4.params=score
+comment4.target=void\ setScore(int)
+comment4.text=\r\n\ Mutator\ Method\ to\ set\ the\ score\ of\ the\ tile\r\n\r\n\ @param\ score\ the\ score\ gained\ by\ the\ player\ from\ playing\ that\ tile\ during\ a\ round.\r\n
+comment5.params=
+comment5.target=int\ getValue()
+comment5.text=\r\n\ Accessor\ Method\ to\ get\ the\ value\ of\ the\ tile\r\n\r\n\ @return\ the\ face\ value\ of\ the\ tile\ which\ is\ used\ to\ calculate\ the\ round\ total\ while\ playing\ the\ game.\r\n
+comment6.params=value
+comment6.target=void\ setValue(int)
+comment6.text=\r\n\ Mutator\ Method\ to\ set\ the\ value\ of\ the\ tile\r\n\r\n\ @param\ value\ the\ face\ value\ of\ the\ tile\ which\ is\ used\ to\ calculate\ the\ round\ total\ while\ playing\ the\ game.\r\n
+numComments=7

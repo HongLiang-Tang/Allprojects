@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAA23794-02ED-9E54-4CD7-D3D7B221A179" name="POLICE_STATION">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>24A7878D-42C1-3F3F-A4C6-D571FDA969D0</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="station_number" id="D51CF4C6-1192-4BC1-82C1-17E3CE95A5D9">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Police stations are identified by a station number</commentInRDBMS>
+<generatorID>1C457231-009D-1300-82BC-5BA353314B1B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="station_address" id="CC8BC92B-6E4E-916D-2C73-42D21B305C7D">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>police station address</commentInRDBMS>
+<generatorID>062EC2B0-B529-88C0-9990-A17145A8A221</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="A2112A59-0A20-49B4-A625-7CB5F0632DA9">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>direct contact phone number to the police  station</commentInRDBMS>
+<generatorID>27C36317-2305-F4C3-D34C-BA32FF878013</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_open_24hours" id="2B8AE9F4-3A82-381D-F049-0B0915018388">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>the station is open 24 hours a day or not</commentInRDBMS>
+<generatorID>3E5CA966-658D-5F9A-8E6B-7CA93F508047</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<constraintName>chk_is_open_24hours</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="no" description="not open 24 hours"/>
+<valueDef value="yes" description="open 24 hours "/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="officer_id" id="9E254C3D-7356-9BB6-BC00-B6A28BF1CA17">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Police officers are identified by an officer id</commentInRDBMS>
+<generatorID>6832EFE0-0BA9-9D6C-AC11-1D8C37D78D60</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D281B65C-CBDE-128F-7D96-BDE8334CBD61" referredColumn="5290F7FB-F988-0DEA-3C92-00458255454C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="668B192F-F90C-A49B-3575-8787EA50E6D2" name="POLICE_STATION_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>E456398D-7987-EF63-63F9-1281938BBED1</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D51CF4C6-1192-4BC1-82C1-17E3CE95A5D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73AB756E-BCEC-26D0-FF44-0A4513764B8C" name="POLICE_STATION__IDX">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>26068D5A-5FD8-3C47-5F05-DA847CE06D8E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9E254C3D-7356-9BB6-BC00-B6A28BF1CA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E9E4807-9C67-4E0B-88D5-21E01BD48639" name="offi_station">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>26068D5A-5FD8-3C47-5F05-DA847CE06D8E</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E254C3D-7356-9BB6-BC00-B6A28BF1CA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

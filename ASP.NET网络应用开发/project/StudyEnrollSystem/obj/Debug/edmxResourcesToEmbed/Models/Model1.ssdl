@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="Services" EntityType="Model1.Store.Services" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CourseRatings" EntityType="Model1.Store.CourseRatings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rates" EntityType="Model1.Store.Rates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Enrolments" EntityType="Model1.Store.Enrolments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="States" EntityType="Model1.Store.States" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Courses" EntityType="Model1.Store.Courses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Studios" EntityType="Model1.Store.Studios" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ServiceCourse" Association="Model1.Store.ServiceCourse">
+      <End Role="Service" EntitySet="Services" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="StateCourse" Association="Model1.Store.StateCourse">
+      <End Role="State" EntitySet="States" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="CourseEnrolment" Association="Model1.Store.CourseEnrolment">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Enrolment" EntitySet="Enrolments" />
+    </AssociationSet>
+    <AssociationSet Name="CourseStudio" Association="Model1.Store.CourseStudio">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Studio" EntitySet="Studios" />
+    </AssociationSet>
+    <AssociationSet Name="RateCourseRating" Association="Model1.Store.RateCourseRating">
+      <End Role="Rate" EntitySet="Rates" />
+      <End Role="CourseRating" EntitySet="CourseRatings" />
+    </AssociationSet>
+    <AssociationSet Name="CourseCourseRating" Association="Model1.Store.CourseCourseRating">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="CourseRating" EntitySet="CourseRatings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServiceName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ServiceDescription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CourseRatings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RateId" Type="int" Nullable="false" />
+    <Property Name="CourseId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rating" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Enrolments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnrolDate" Type="datetime" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CourseId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="States">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Courses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactEmailForCourse" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CourseDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StartDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EndDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ServiceId" Type="int" Nullable="false" />
+    <Property Name="StateId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Studios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudioName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Latitude" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Longitude" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StartTime" Type="time" Nullable="false" />
+    <Property Name="FinishTime" Type="time" Nullable="false" />
+    <Property Name="StudioDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CourseId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ServiceCourse">
+    <End Role="Service" Type="Model1.Store.Services" Multiplicity="1" />
+    <End Role="Course" Type="Model1.Store.Courses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Service">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StateCourse">
+    <End Role="State" Type="Model1.Store.States" Multiplicity="1" />
+    <End Role="Course" Type="Model1.Store.Courses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CourseEnrolment">
+    <End Role="Course" Type="Model1.Store.Courses" Multiplicity="1" />
+    <End Role="Enrolment" Type="Model1.Store.Enrolments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enrolment">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CourseStudio">
+    <End Role="Course" Type="Model1.Store.Courses" Multiplicity="1" />
+    <End Role="Studio" Type="Model1.Store.Studios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Studio">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RateCourseRating">
+    <End Role="Rate" Type="Model1.Store.Rates" Multiplicity="1" />
+    <End Role="CourseRating" Type="Model1.Store.CourseRatings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CourseRating">
+        <PropertyRef Name="RateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CourseCourseRating">
+    <End Role="Course" Type="Model1.Store.Courses" Multiplicity="1" />
+    <End Role="CourseRating" Type="Model1.Store.CourseRatings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CourseRating">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

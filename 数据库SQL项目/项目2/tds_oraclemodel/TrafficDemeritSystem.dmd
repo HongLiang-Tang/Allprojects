@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="TrafficDemeritSystem" id="C6F2FBA3-2FEB-6621-17DD-BB1ADF094EDE" version="3.5">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 08:47:37 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C6F2FBA3-2FEB-6621-17DD-BB1ADF094EDE</designId>
+</OSDM_Design>

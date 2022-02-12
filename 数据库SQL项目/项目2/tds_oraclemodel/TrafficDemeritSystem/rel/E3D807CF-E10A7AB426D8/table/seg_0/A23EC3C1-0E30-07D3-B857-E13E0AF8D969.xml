@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A23EC3C1-0E30-07D3-B857-E13E0AF8D969" name="ENGINE_TYPE">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>B42C1FE6-9C6D-9DED-CC7E-B39E6235D3CF</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="model_name" id="2B7FC8DA-7CA7-D480-0967-081740D680F4">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Model name</commentInRDBMS>
+<generatorID>87F6597E-2BE7-8B29-69BE-EEA0051AE57F</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A5C6954-11CD-F605-5D44-FFFF49F8BD46" referredColumn="47BAB15C-C210-6DE1-26EC-08F5D12DAB02"/>
+</associations>
+</Column>
+<Column name="type_code" id="235C8849-1622-C2A9-B0A5-4C0BAFF329F8">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>surrogate key to uniquely identify engine type. improve design.</commentInRDBMS>
+<generatorID>A9697E22-6DF6-30A6-27EF-31B0229BE880</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1C4CA06-5CFE-63E6-2CA2-0F658064AA02" referredColumn="B41AEB9D-838A-2283-FB7C-7BE786AC252B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBBA57F4-6F19-1DA6-86A1-DDE4203B9246" name="ENGINE_TYPE_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>53E81428-9EC1-4096-195B-A0470078EDF7</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B7FC8DA-7CA7-D480-0967-081740D680F4"/>
+<colUsage columnID="235C8849-1622-C2A9-B0A5-4C0BAFF329F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8E08D1E-D2AE-DE4C-B10B-F510805B0A71" name="eng_type_type">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>7874DB54-C0B4-D4D8-46BB-F348683C9D8B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="235C8849-1622-C2A9-B0A5-4C0BAFF329F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="813D989B-AFA8-565D-F13A-0DF6A30A8893" name="veh_mod_eng_type">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>342857D9-A085-855B-25DA-45C474815E26</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B7FC8DA-7CA7-D480-0967-081740D680F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

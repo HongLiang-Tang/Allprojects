@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="747C087A-C926-2B46-FEB1-E86050A8D7E3" name="CANCELLATION">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>A6823D83-69B2-6D0D-9BFC-7F0132C15BFA</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lic_num" id="EAD67470-84AA-B951-4530-6718B3013840">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS> license number</commentInRDBMS>
+<generatorID>B11F6BCE-029A-19A6-35D7-33940B927229</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AFAE4A4-E6BA-19EF-AB0E-E8E4CE2C5904" referredColumn="92FC4F77-5D9C-FBBB-F461-704470A8CD65"/>
+</associations>
+</Column>
+<Column name="date_cancelled" id="A5D57DC8-8B49-348A-D8FB-207FD9BEC90A">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>license cancelled date</commentInRDBMS>
+<generatorID>0EDFA537-E14A-FA89-83E3-B1F02BE6D3F3</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cancellation_period" id="72AC4798-34EB-9A8F-4FE1-7F9CD7C63FA0">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>Cancellation Period(months)</commentInRDBMS>
+<generatorID>91E60CCF-CD94-4B8F-49F7-9BEF4B3FBF5B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reason_cancelled" id="0C992AEA-0A7F-F048-8C9C-46CF9CEF7FAA">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>the reason cancelled this driver&apos;s license</commentInRDBMS>
+<generatorID>512C22E0-E9C5-D181-0EB0-4BCE1B9A716F</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reinstatement_date" id="90A59B0B-D63F-EA94-BA83-088A4693FEF9">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<commentInRDBMS>License Reinstatment date</commentInRDBMS>
+<generatorID>BF9C4331-8189-4204-9F0E-D8CF1F662D08</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hearing_date" id="0D77A006-D44E-49D6-7EA0-9B606841AFEA">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<comment>Court hearing date</comment>
+<generatorID>2835B775-AFDD-5581-B818-F265111B45A5</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01F4CDD1-4D1E-60FC-72C0-4AEBEDA313D8" name="CANCELLATION_PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>5530B86D-F047-CD7C-B252-74C1FAB62A3B</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5D57DC8-8B49-348A-D8FB-207FD9BEC90A"/>
+<colUsage columnID="EAD67470-84AA-B951-4530-6718B3013840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38CA609D-DBE6-A9AE-051E-BF167D2053B3" name="driver_cancellation">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-26 00:41:21 UTC</createdTime>
+<generatorID>38EC0250-47BA-E8EF-B81C-6B5F7135D7A4</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAD67470-84AA-B951-4530-6718B3013840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

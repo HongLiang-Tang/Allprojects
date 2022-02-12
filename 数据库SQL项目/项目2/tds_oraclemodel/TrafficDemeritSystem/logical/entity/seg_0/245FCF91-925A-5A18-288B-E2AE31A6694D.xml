@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="245FCF91-925A-5A18-288B-E2AE31A6694D" name="LICENSE_TYPE">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:11:38 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lic_num" id="5C41F3D8-7D55-D17E-EAB7-2287790C7ADA">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:49:27 UTC</createdTime>
+<commentInRDBMS> license number</commentInRDBMS>
+<generatorID>273ECC2E-FC17-B46A-6E50-E1C3237136A6</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>B6B48A63-FA16-E754-7CD2-DBFA03D00528</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type_num" id="FA9F8250-C107-AE94-C64E-89FAC5AB268E">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 22:50:45 UTC</createdTime>
+<comment>added surrogate key to uniquely identifies license type.improve design</comment>
+<generatorID>39F3978E-2927-6B5F-02A7-9A0B5CAC6DAC</generatorID>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="true"/>
+</engineerTo>
+<referedAttribute>85861D4F-3E40-1E5A-AA95-F77A562D859D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EFBE0CA2-187E-8564-CC71-4CA1EF68B6DE" name="LICENSE_TYPE PK">
+<createdBy>thlal</createdBy>
+<createdTime>2019-09-25 13:14:00 UTC</createdTime>
+<ownerDesignName>TrafficDemeritSystem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E3D807CF-215D-8CBE-58A9-E10A7AB426D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5C41F3D8-7D55-D17E-EAB7-2287790C7ADA</attributeRef>
+<attributeRef>FA9F8250-C107-AE94-C64E-89FAC5AB268E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
